@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="git.css" />
+    <title>Github Projet</title>
+  </head>
+  <header>
+    <h1>
+      Liste des Commandes <br />
+      Et <br />
+      Description
+    </h1>
+    <p><em>Git est le sytème de gestion de version décentralisé open source qui facilite les activités GitHub sur votre ordinateur.
+      Cet aide-mémoire permet un accès rapide aux instructions des commandes Git les plus utilisées.</em></p>
+  </header>
+  <body>
+    <table>
+      <tr>
+        <th>Liste des Commandes</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <ol>
+            <b> $ git config --global user.name "[nom]"</b>
+          </ol>
+        </td>
+
+        <td>
+          Définit le nom que vous voulez associer à toutes vos opérations de
+          commit
+        </td>
+      </tr>
+      <td><ol><b>$ git config --global user.email "[adresse email]"</b></ol></td>
+      <td>
+        Définit l'email que vous voulez associer à toutes vos opérations de
+        commit
+      </td>
+      <tr>
+        <td><ol><b>$ git config --global color.ui auto</b></ol></td>
+        <td>Active la colorisation de la sortie en ligne de commande</td>
+      </tr>
+      <tr>
+        <td><ol><b>$ git init [nom-du-projet]</b></ol></td>
+        <td>Crée un dépôt local à partir du nom spécifié</td>
+      </tr>
+      <tr>
+        <td><ol><b>$ git clone [url]</b></ol></td>
+        <td>Télécharge un projet et tout son historique de versions</td>
+      </tr>
+      <tr>
+        <td><ol><b>$ git status</b></ol></td>
+        <td>
+          Liste tous les nouveaux fichiers et les fichiers modifiés à commite
+        </td>
+      </tr>
+      <tr>
+        <td><ol><b>$ git diff</b></ol></td>
+        <td>
+          Montre les modifications de fichier qui ne sont pas encore indexées
+        </td>
+      </tr>
+      <tr>
+        <td><ol><b>$ git add [fichier]</b></ol></td>
+        <td>
+          Ajoute un instantané du fichier, en préparation pour le suivi de
+          version
+        </td>
+      </tr>
+      <tr>
+        <td><ol><b>$ git diff --staged</b></ol></td>
+        <td>
+          Montre les différences de fichier entre la version indexée et la
+          dernière version
+        </td>
+      </tr>
+      <tr>
+        <td><ol><b>$ git reset [fichier]</b></ol></td>
+        <td>Enleve le fichier de l'index, mais conserve son contenu</td>
+      </tr>
+      <tr>
+        <td><ol><b>$ git commit -m "[message descriptif]"</b></ol></td>
+        <td>
+          Enregistre des instantanés de fichiers de façon permanente dans
+          l'historique des versions
+        </td>
+      </tr>
+      <tr>
+        <td><b>$ git branch</b></td>
+        <td>Liste toutes les branches locales dans le dépôt courant</td>
+      </tr>
+      </tr>
+      <tr>
+        <td><b>$ git branch [nom-de-branche]</b></td>
+        <td>Crée une nouvelle branche</td>
+      </tr>
+      </tr>
+      <tr>
+        <td><b>$ git checkout [nom-de-branche]</b></td>
+        <td>Bascule sur la branche spécifiée et met à jour le répertoire de travail</td>
+      </tr>
+      </tr>
+      <tr>
+        <td><b>$ git merge [nom-de-branche]</b></td>
+        <td>Combine dans la branche courante l'historique de la branche spécifiée</td>
+      </tr>
+      </tr>
+      <tr>
+        <td><b>$ git branch -d [nom-de-branche]</b></td>
+        <td>Supprime la branche spécifiée</td>
+      </tr>
+      </tr>
+      <tr>
+        <td><b>$ git rm [fichier]</b></td>
+        <td>Supprime le fichier du répertoire de travail et met à jour l'index</td>
+      </tr>
+      </tr>
+      <tr>
+        <td><b>$ git rm --cached [fichier]</b></td>
+        <td>Supprime le fichier du système de suivi de version mais le préserve
+          localement </td>
+      </tr>
+      </tr>
+      <tr>
+        <td><b>$ git mv [fichier-nom] [fichier-nouveau-nom]</b></td>
+        <td>Renomme le fichier et prépare le changement pour un commit</td>
+      </tr>
+      </tr>
+      <tr>
+        <td><b>$ git log</b></td>
+        <td>Montre l'historique des versions pour la branche courante</td>
+      </tr>
+      </tr>
+      <tr>
+        <td><b>$ git log --follow [fichier]</b></td>
+        <td>Montre l'historique des versions, y compris les actions de renommage, pour le fichier spécifié</td>
+      </tr>
+      <tr>
+        <td><b>$ git diff [premiere-branche]...[deuxieme-branche]</b></td>
+        <td>Montre les différences de contenu entre deux branches</td>
+      </tr>
+      <tr>
+        <td><b>$ git show [commit]</b></td>
+        <td>Montre les modifications de métadonnées et de contenu inclues dans
+          EXCLURE DU SUIVI DE VERSION le commit spécifié</td>
+      </tr>
+      <tr>
+        <td><b>$ git reset [commit]</b></td>
+        <td>Annule tous les commits après `[commit]`, en conservant les
+          modifications localement</td>
+      </tr>
+      <tr>
+        <td><b>$ git reset --hard [commit]</b></td>
+        <td>Supprime tout l'historique et les modifications effectuées après le
+          commit spécifié</td>
+      </tr>
+      <tr>
+        <td><b>$ git fetch [nom-de-depot]</b></td>
+        <td>Récupère tout l'historique du dépôt nommé</td>
+      </tr>
+      <tr>
+        <td><b>$ git merge [nom-de-depot]/[branche]</b></td>
+        <td>Fusionne la branche du dépôt dans la branche locale courante</td>
+      </tr>
+      <tr>
+        <td><b>$ git push [alias] [branche]</b></td>
+        <td>Envoie tous les commits de la branche locale vers GitHub</td>
+      </tr>
+      <tr>
+        <td><b>$ git pull</b></td>
+        <td>Récupère tout l'historique du dépôt nommé et incorpore les modifications</td>
+      </tr>
+    </table>
+  </body>
+</html>
