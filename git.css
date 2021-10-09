@@ -1,6 +1,13 @@
 td,th {
     border: 1px solid black;
+
 }
 table {
-    bordel-collapse:bordel-collapse
+    border-collapse:border collapse;
+    background-color:violet;
+}
+
+
+header {
+    background-color: rgb(43, 168, 226);
 }
